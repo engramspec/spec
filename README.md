@@ -196,7 +196,7 @@ Eight-step verification process: parse → check version → check expiry → fe
 
 | Runtime | Language | Tier | Maintained by |
 |---------|----------|------|---------------|
-| [OpenClaw](https://openclaw.ai) | Node.js | Writer | 8mem |
+| [OpenClaw](https://openclaw.ai) | Node.js | Writer | OpenClaw Foundation |
 | [Hermes](https://hermes.ai) | Python | Writer | Nous Research |
 
 *Building an Engram integration? Open an issue with label `implementation` to be listed here.*
