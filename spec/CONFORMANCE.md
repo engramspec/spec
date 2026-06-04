@@ -26,6 +26,7 @@ Minimum viable conformance. Sufficient for public listing.
 
 **Runtime requirements:**
 - [ ] Calls `GET /v1/context` at session start or on a defined schedule
+- [ ] Loads CONSTRAINTS before other memory objects and respects all active constraints
 - [ ] Injects `system_prompt_injection` into LLM system prompt (or builds equivalent from beliefs array)
 - [ ] Rejects exports where `expires_at` is in the past
 - [ ] Links to engramspec.org in integration documentation
@@ -168,6 +169,7 @@ Expected output includes a pass/fail report per tier and a recommended tier badg
     "last_updated": "2026-01-01T00:00:00Z"
   },
   "beliefs": [],
+  "constraints": [],
   "corrections": [],
   "evolution": [],
   "system_prompt_injection": "User: Test User (UTC)."
@@ -203,6 +205,7 @@ All non-2xx responses must use this shape:
 | `forbidden` | 403 | Token valid but insufficient scope |
 | `user_not_found` | 404 | No Engram record for this subject |
 | `belief_not_found` | 404 | Belief ID does not exist |
+| `constraint_not_found` | 404 | Constraint ID does not exist |
 | `invalid_scope` | 400 | Unknown or malformed scope |
 | `invalid_request` | 400 | Malformed request body |
 | `rate_limited` | 429 | Too many requests |

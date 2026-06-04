@@ -257,9 +257,10 @@ Documented honestly in [Part 12 of the spec](spec/v0.1.md). Summary:
 
 **Full implementation guide:** [`spec/v0.1.md §5`](spec/v0.1.md)
 
-**Official SDKs:**
-- Python: `pip install engram` — [sdk-python](https://github.com/engramspec/sdk-python)
-- Node.js: `npm install @engram/client` — [sdk-node](https://github.com/engramspec/sdk-node)
+**Official SDKs:** coming soon
+
+- Python: `pip install engram`
+- Node.js: `npm install @engram/client`
 
 ---
 

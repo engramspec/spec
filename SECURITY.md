@@ -53,7 +53,7 @@ These are documented limitations, not vulnerabilities — they are stated honest
 The 8mem server signs every export. Reference runtimes (OpenClaw, Hermes) do not yet verify the signature. This means an attacker who can modify the context file on a local machine could inject false memory without detection. Mitigation: v0.2 will require verification for Tier 2+ conformance. Risk is low for personal-use deployments where the user controls both the provider and the runtime.
 
 **`GET /v1/context/diff` is not independently signed.**
-The diff endpoint is an optimisation for trusted channels. Runtimes requiring tamper-proof deltas should call `GET /v1/context` for a full signed export. This is documented in §3.9 of the spec.
+The diff endpoint is an optimisation for trusted channels. Runtimes requiring tamper-proof deltas should call `GET /v1/context` for a full signed export. This is documented in §3.10 of the spec.
 
 **Token issuance is not standardised in v0.1.**
 The spec does not define how a user grants a runtime access to their Engram store. Until v0.2 defines the delegation flow, runtimes use tokens issued directly by the provider's own auth system. This is documented in §12.1.
@@ -62,7 +62,7 @@ The spec does not define how a user grants a runtime access to their Engram stor
 
 ## What Would Constitute a Spec-Level Vulnerability
 
-- A flaw in the Ed25519 signing specification (§3.8) that allows signature forgery
+- A flaw in the Ed25519 signing specification (§3.9) that allows signature forgery
 - A schema design that enables PII leakage across scoped exports
 - An API contract design that allows a runtime to write to user memory without user confirmation
 - A versioning rule that would allow a downgrade attack
