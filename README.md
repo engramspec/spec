@@ -176,7 +176,7 @@ Eight-step verification process: parse → check version → check expiry → fe
 
 ## Reference Implementation
 
-[8mem](https://8mem.com) (`pip install 8mem`) is the reference implementation of Engram.
+[8mem](https://github.com/tempomesh/8mem-clean) (`pip install 8mem`) is the reference implementation of Engram.
 
 | Feature | Status |
 |---------|--------|
@@ -277,15 +277,17 @@ If you use or reference Engram in academic work:
 
 ```bibtex
 @misc{engram2026,
-  title        = {Engram: An Open Protocol for Portable, Governed {AI} Memory},
+  title        = {Engram: An Open Protocol for Portable, Governed {AI} Memory --- The {OAuth} for {AI} Memory},
   author       = {Verma, Ashish},
   year         = {2026},
+  doi          = {10.2139/ssrn.6878038},
+  url          = {https://papers.ssrn.com/abstract=6878038},
   howpublished = {\url{https://engramspec.org}},
-  note         = {RFC Draft v0.1. CC BY 4.0.}
+  note         = {SSRN Working Paper. RFC Draft v0.1. CC BY 4.0.}
 }
 ```
 
-Working paper: [SSRN link] — Verma, A. (2026). *Engram: An Open Protocol for Portable, Governed AI Memory.*
+Working paper: Verma, A. (2026). *Engram: An Open Protocol for Portable, Governed AI Memory — The OAuth for AI Memory.* SSRN. [https://doi.org/10.2139/ssrn.6878038](https://doi.org/10.2139/ssrn.6878038)
 
 ---
 
