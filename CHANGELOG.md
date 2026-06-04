@@ -19,6 +19,27 @@ Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ---
 
+## [0.1.2] — 2026-06-04
+
+### Added
+- `CONSTRAINTS` as fifth core object — hard rules the agent MUST NEVER violate (§3.7)
+- Enforcement contract (normative): load before other objects, check before generation, refuse and surface if violated
+- `POST /v1/context/constrain` — user sets a new hard constraint (Tier 2+)
+- `DELETE /v1/context/constrain/{id}` — tombstones a constraint (Tier 2+)
+- `constraint_not_found` (404) added to standard error codes
+- Constraint tombstone pattern — deleted constraints remain in exports with `status: "deleted"`
+- CONSTRAINTS included in every scope export by default
+- `constraints` changes object added to `GET /v1/context/diff` response
+- `constrain` endpoint added to `/.well-known/engram` discovery response
+- Standard constraint categories: `communication`, `content`, `data`, `behaviour`, `safety`, `custom`
+
+### Changed
+- Schema overview: four core objects → five core objects
+- Adoption tiers: Full tier now includes constraint management and Ed25519 verification
+- Minimal runtime compatibility definition now requires loading and respecting CONSTRAINTS
+
+---
+
 ## [0.1.1] — 2026-04-29
 
 ### Added
