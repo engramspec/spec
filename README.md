@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/engram_full_logo_transparent.png" alt="Engram open protocol logo" width="720">
+</p>
+
 # Engram Memory Protocol
 
 **The open standard for portable, governed AI memory.**
@@ -171,6 +175,16 @@ Every export is signed with the provider's **Ed25519** private key. Runtimes ver
 Eight-step verification process: parse → check version → check expiry → fetch public keys → match `kid` → verify signature → check clock skew → apply filters. See [§3.8 of the spec](spec/v0.1.md) for the full process.
 
 **v0.1 note:** signature verification is defined in the spec but not yet enforced by reference runtimes. Required for Tier 2+ conformance from v0.2. Documented honestly in [§12 of the spec](spec/v0.1.md).
+
+---
+
+## Brand Assets
+
+Official logo and social assets are available in [`assets/`](assets/):
+
+- [`engram_full_logo_transparent.png`](assets/engram_full_logo_transparent.png) — full logo for README, website, and documentation
+- [`engram_mark_transparent.png`](assets/engram_mark_transparent.png) — compact page/profile logo
+- [`engram_linkedin_page_cover_1128x191.png`](assets/engram_linkedin_page_cover_1128x191.png) — LinkedIn page cover
 
 ---
 
