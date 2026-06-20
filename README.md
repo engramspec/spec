@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="assets/engram_full_logo_transparent.png" alt="Engram open protocol logo" width="720">
+  <img src="assets/engramspec_logo_transparent.png" alt="EngramSpec open memory protocol logo" width="760">
 </p>
 
-# Engram Memory Protocol
+# EngramSpec
 
 **The open standard for portable, governed AI memory.**
 
@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Every AI system today starts from zero knowledge of its user. Memory is siloed by product, by company, by session — a structural problem no single AI company has incentive to fix. Engram is an open protocol that defines how any AI runtime retrieves structured, signed, user-governed memory from any conforming provider. One HTTP endpoint. Any runtime. User controls everything.
+Every AI system today starts from zero knowledge of its user. Memory is siloed by product, by company, by session — a structural problem no single AI company has incentive to fix. EngramSpec defines Engram, an open protocol that lets any AI runtime retrieve structured, signed, user-governed memory from any conforming provider. One HTTP endpoint. Any runtime. User controls everything.
 
 Engram is a format specification — like JSON, like OAuth — not a product. Anyone can implement it. No one owns it.
 
