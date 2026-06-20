@@ -1,7 +1,3 @@
----
-title: EngramSpec
----
-
 <p align="center">
   <img src="assets/engramspec_logo_transparent.png" alt="EngramSpec open memory protocol logo" style="width: 100%; max-width: 760px; height: auto;">
 </p>
