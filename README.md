@@ -178,16 +178,6 @@ Eight-step verification process: parse → check version → check expiry → fe
 
 ---
 
-## Brand Assets
-
-Official logo and social assets are available in [`assets/`](assets/):
-
-- [`engram_full_logo_transparent.png`](assets/engram_full_logo_transparent.png) — full logo for README, website, and documentation
-- [`engram_mark_transparent.png`](assets/engram_mark_transparent.png) — compact page/profile logo
-- [`engram_linkedin_page_cover_1128x191.png`](assets/engram_linkedin_page_cover_1128x191.png) — LinkedIn page cover
-
----
-
 ## Reference Implementation
 
 [8mem](https://github.com/tempomesh/8mem-clean) (`pip install 8mem`) is the reference implementation of Engram.
